@@ -1,5 +1,5 @@
 # asga(Alphanumeric Shellcode Generator for ARM targets)
-Based on Rix's "Writing ia32 alphanumeric shellcodes", idea of looped decoding from BerendJanWever's "Alpha3", and the Prack article "Alphanumeric RISC ARM Shellcode" by Yves Younan et al
+Based on Rix's "Writing ia32 alphanumeric shellcodes", idea of looped decoding from BerendJanWever's "Alpha3", and the Phrack article "Alphanumeric RISC ARM Shellcode" by Yves Younan et al
 
 ##Build:
 cd [project_root]/src  
