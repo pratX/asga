@@ -34,7 +34,7 @@ int main(){
         
 
 	/*Command line UI*/
-	char input_C[20], input_var[20], input_bin[20], output_C[20], output_bin[20];
+	char input_C[500], input_var[500], input_bin[500], output_C[500], output_bin[500];
 	unsigned char in_choice[10], out_choice[10], flush_choice[10], try_choice[10];
 	unsigned int icache_flush, try_flag = 0;
 	printf("Input file type: C or binary? [C/b]");
