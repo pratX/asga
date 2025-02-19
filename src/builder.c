@@ -250,7 +250,7 @@ void DecoderBuilder(struct Sshellcode* output, struct Sshellcode* input, unsigne
 	lmul(output, m, reglH, reglL);*/
 	
 	
-		unsigned char c = off_gen(24);
+		unsigned char c = off_gen_aligned(24);
 		unsigned char arr5[] = {2,4,6,8,10,12,14,16,18};
 		unsigned char arr6[] = {4,6};
 		unsigned char arr7[] = {1,2,4,8};
