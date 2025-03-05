@@ -57,6 +57,25 @@ unsigned char off_gen (unsigned char c){
 
 
 
+/* generate an alphanumeric offset such that c+offset is also alphanumeric, aligned by 4 bytes */
+/* ======================================================================= */
+unsigned char off_gen_aligned (unsigned char c){
+    if (c >= 0 && c <= 0x4a) {
+        unsigned char max = 16 * 7 + 10 - c;
+        while (1) {
+            unsigned char x = alphanumeric_get_byte_ltmax(max);
+            if (alphanumeric_check(c + x) && (x % 4 == 0)) {
+                return x;
+            }
+        }
+    } 
+    else {
+        return 0;
+    }
+}
+
+
+
 /* return an alphanumeric value ret such that c XOR ret is also alphanumeric */
 /* ========================================================================= */
 unsigned char alphanumeric_get_complement(unsigned char c) {
